@@ -1,13 +1,8 @@
 name: 'Codeception Tests'
 on:
-  pull_request:
-    paths:
-      - '*/**.php'
-      - 'tests/**'
-      - '*.php'
-      - 'composer.json'
-      - 'codeception.*.yml'
-      - '.github/workflows/tests-php.yml'
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
+  workflow_dispatch:
+
 jobs:
   test:
     strategy:
